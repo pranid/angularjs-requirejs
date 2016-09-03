@@ -7,6 +7,7 @@ require.config({
     paths: {
         'angular': '../lib/angular/angular.min',
         'angular-route': '../lib/angular/angular-route.min',
+        'ui-router': '../lib/angular/angular-ui-router.min',
         'domReady': '../lib/requirejs/domReady'
     },
 
@@ -18,13 +19,13 @@ require.config({
         'angular': {
             exports: 'angular'
         },
-        'angular-route': {
+        'ui-router': {
             deps: ['angular']
         }
     },
 
     deps: [
-        // kick start application... see bootstrap.js
-       './bootstrap'
+        // kick start application... see app.init.js
+       './app.init'
     ]
 });

@@ -1,9 +1,9 @@
 /**
  * Created by praneeth on 9/2/2016.
  */
-define(['angular'], function (angular) {
+define(['./homeMod'], function (homeMod) {
     'use strict';
-    var home = angular.module('app.homeMod', []);
+    var home = homeMod;
 
 
     // return ng.module('app.controllers', []);
