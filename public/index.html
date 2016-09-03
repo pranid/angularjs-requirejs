@@ -10,9 +10,10 @@
     <div class="container">
         <h2>Click to do the magic!</h2>
         <h3>{{'hello'}}</h3>
-        <a href="#/vone" class="btn btn-primary">View One</a>
-        <a href="#/vtwo" class="btn btn-success">View Two</a>
+        <a ui-sref="vone" class="btn btn-primary">View One</a>
+        <a ui-sref="login" class="btn btn-success">Login</a>
         <div data-ng-view></div>
+        <div ui-view></div>
     </div>
 
 

@@ -4,15 +4,15 @@
 define([
 
     'angular',
-    'angular-route',
-    './home/home.ctrl'
+    'ui-router',
+    './home/controllers'
 
 ], function (angular) {
     'use strict';
-    console.log(angular);
+    // console.log(angular);
 
     return angular.module('app', [
         'app.homeMod',
-        'ngRoute'
+        'ui.router'
     ]);
 });
