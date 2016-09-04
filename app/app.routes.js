@@ -3,26 +3,23 @@
  */
 define(['./app'], function (app) {
     'use strict';
-    app.config(function($stateProvider) {
+
+    return app.config(function ($stateProvider, $urlRouterProvider) {
         $stateProvider
 
             .state('vone', {
                 url: '/vone',
-                templateUrl: './../system/partials/vone.html',
+                templateUrl: './partials/home/vone.html',
                 controller: 'mainCtrl'
             })
             .state('login', {
                 url: '/login',
-                templateUrl: './../system/partials/login.html',
+                templateUrl: './partials/main/login.html',
                 controller: 'loginCtrl'
             });
-    });
 
-    app.config(function($urlRouterProvider) {
         $urlRouterProvider.otherwise('login');
     });
-
-    return app;
 
 
 });
