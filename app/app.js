@@ -5,14 +5,13 @@ define([
 
     'angular',
     'ui-router',
-    '../modules/home/controllers'
-
+    '../modules/main/main.pack'
 ], function (angular) {
     'use strict';
     // console.log(angular);
 
     return angular.module('app', [
-        'app.homeMod',
+        'app.main',
         'ui.router'
     ]);
 });
